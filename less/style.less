@@ -1,0 +1,916 @@
+/////////////////////////// SETTINGS /////////////////////////
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+.open_reg()
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.passion_reg()
+{
+	font-family: 'Passion One', cursive;
+	font-weight: 400;
+}
+
+.container
+{
+	width: 1170px;
+	max-width: 100%;
+	margin: 0 auto;
+	height: 100%;
+}
+
+@btn-color: #6597FF;
+@btn-text-color: #fff;
+
+/////////////////////////// SETTINGS /////////////////////////
+
+/////////////////////////// HEADER ///////////////////////////
+.header
+{
+    box-shadow: 0px 4px 21px 7px rgba(0, 0, 0, 0.25);
+    height: 90px;
+    width: 100%;
+}
+
+.header__content
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo
+{
+    .passion_reg();
+    font-size: 48px;
+    color: #454F66;
+    span
+    {
+        color: #5289FB;
+    }
+}
+
+.header__info
+{
+    display: flex;
+    align-items: center;
+}
+
+.header__phoneNumber
+{
+    .open_reg();
+    color: #454F66;
+    margin-right: 40px;
+    background: url(../img/phone.svg) left no-repeat;
+    padding-left: 35px;
+}
+
+.btn
+{
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-style: none;
+    background-color: @btn-color;
+    color: @btn-text-color;
+    border-radius: 20px;
+    text-transform: uppercase;
+    .open_reg();
+    transition: all .3s;
+    &:hover
+    {
+        background-color:lighten(@btn-color, 10%);
+    }
+    &:focus
+    {
+        background-color:darken(@btn-color, 15%);
+    }
+}
+
+.header__btn
+{
+    padding: 10px 30px;
+}
+
+/////////////////////////// HEADER ///////////////////////////
+
+/////////////////////////// MAIN /////////////////////////////
+
+.main
+{
+    position: relative;
+    width: 100%;
+    height: 610px;
+    background-size: cover;
+    &:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+	    left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.6);
+		z-index: 2;
+	}
+}
+
+.main__content
+{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main__info
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__list
+{
+    ul
+    {
+        padding: 0;
+    }
+}
+
+.main__list-item
+{
+    list-style: none;
+    background: url(../img/leaf.svg) 0 5px no-repeat;
+    padding-left: 40px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    .open_reg();
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.main__btn
+{
+    padding: 10px 0;
+}
+
+/////////////////////////// MAIN /////////////////////////////
+
+/////////////////////////// STRUCTURE ////////////////////////
+
+.structure
+{
+    height: 650px;
+    background: url(../img/structure-bg.jpg) center no-repeat;
+    background-size: cover;
+}
+.structure__content
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.structure__items
+{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 15%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.structure__item
+{
+    p
+    {
+        margin: 5px 0 0 0;
+    }
+    .open_reg();
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/////////////////////////// STRUCTURE ////////////////////////
+
+/////////////////////////// FEEDBACK /////////////////////////
+
+.feedback
+{
+    height: 500px;
+}
+
+.feedback__title
+{
+    text-align: center;
+    text-transform: uppercase;
+    .passion_reg();
+    font-size: 60px;
+}
+
+.slider
+{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-list
+{
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: -5px 0px 77px 8px rgba(0, 0, 0, 0.25);
+    width: 80%;
+}
+
+.slick-slide
+{
+    padding: 20px 30px;
+}
+
+.slick-dots
+{
+    transform: translateY(30px);
+    li
+    {
+        button
+        {
+            &::before
+            {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+.slick-arrow
+{  
+    &::before
+    {
+        font-size: 40px;
+        color:@btn-color;
+    }
+}
+
+.slide__name
+{
+    margin-bottom: 30px;
+    .open_reg();
+    color: @btn-color;
+    font-size: 23px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+
+.slide__text
+{
+    margin: auto 0;
+    margin-left: 15px;
+    .open_reg();
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.slide__body
+{
+    margin-top: auto 0;
+    display: flex;
+    img
+    {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/////////////////////////// FEEDBACK /////////////////////////
+
+/////////////////////////// PROMO ////////////////////////////
+
+.promo
+{
+    height: 650px;
+    margin-top: 50px;
+    background: url(../img/promo-bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.promo__content
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo__top
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.promo__top-info
+{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.promo__text
+{
+    text-transform: uppercase;
+    .open_reg();
+    font-size: 16px;
+    &:last-child
+    {
+        margin-bottom: 100px;
+    }
+}
+
+.promo__btn
+{
+    width: 30%;
+    padding: 10px 50px;
+}
+
+.promo__bottom
+{
+    margin-top: 50px;
+}
+
+.promo__list
+{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.promo__list-item
+{
+    text-transform: uppercase;
+    .passion_reg();
+    font-size: 35px;
+}
+/////////////////////////// PROMO ////////////////////////////
+
+/////////////////////////// SALE /////////////////////////////
+
+.sale
+{
+    height: 600px;
+    width: 100%;
+}
+
+.sale__content
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale__info
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &-left
+    {
+        h2
+        {
+            .open_reg();
+            text-transform: uppercase;
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.sale__timer
+{
+    .passion_reg();
+    font-size: 64px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.old__price
+{
+    position: relative;
+    margin-bottom: 10px;
+    .open_reg();
+    font-size: 36px;
+    span
+    {
+        margin-left: 5px;
+        font-size: 18px;
+    }
+    &::before
+    {
+        border-bottom: 3px solid red;
+        position: absolute;
+        content: "";
+        width: 25%;
+        height: 50%;
+        transform: rotate(-20deg);
+    }
+}
+
+.new__price
+{
+    margin-top: 10px;
+    .open_reg();
+    font-size: 36px;
+    span
+    {
+        margin-right: 5px;
+        .passion_reg();
+        font-size: 70px;
+        color: #FF0000;
+    }
+}
+
+.sale__img
+{
+    width: 150px;
+    transform: rotate(-15deg);
+}
+
+.sale__form
+{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__title
+{
+    .open_reg();
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.form__fields
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form__field
+{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.name__label, .phone__label
+{
+    position: absolute;
+    right: 33px;
+    top: 3px;
+    .open_reg();
+    font-size: 14px;
+    color:rgb(126, 126, 126);
+    display: none;
+}
+
+.form__content
+{
+    text-align: center;
+    position: relative;
+}
+
+.form__input
+{
+    border-style: none;
+    border: 1px solid #A0A0A0;
+    text-align: center;
+    .open_reg();
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 25px 70px;
+    &:focus
+		{
+			outline: none;
+			&::placeholder
+			{
+				color: transparent;
+			}
+		}
+}
+
+.form__btn
+{
+    width: 50%;
+    padding: 15px 0;
+}
+
+.message
+{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    text-transform: uppercase;
+    font-size: 12px;
+    .open_reg();
+    display: none;
+}
+
+/////////////////////////// SALE /////////////////////////////
+
+/////////////////////////// MEDIA QUERIES ////////////////////
+
+@media (max-width: 1200px) {
+    .container
+	{
+		width: 970px;
+	}
+    .name__label, .phone__label
+    {
+        right: 17px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container
+	{
+		width: 768px;
+	}
+    .promo__top
+    {
+        justify-content: space-between;
+        img
+        {
+            width: 320px;
+        }
+    }
+    .form__btn
+    {
+        width: 90%;
+    }
+    .structure__items
+    {
+        width: 30%;
+    }
+    .name__label, .phone__label
+    {
+        right: -10px;
+    }
+    .old__price
+    {
+        &::before
+        {
+            width: 30%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container
+	{
+		width: 650px;
+	}
+    .message
+    {
+        font-size: 16px;
+    }
+    .name__label, .phone__label
+    {
+        right: -5px;
+    }
+    .main__list-item
+    {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .structure__product
+    {
+        img
+        {
+            width: 160px;
+        }
+    }
+    .structure__items
+    {
+        width: 25%;
+    }
+    .structure__content
+    {
+        justify-content: space-between;
+    }
+    .promo
+    {
+        margin-top: 90px;
+    }
+    .promo__top
+    {
+        img
+        {
+            width: 280px;
+        }
+    }
+    .promo__list
+    {
+        justify-content: space-between;
+        &-item
+        {
+            font-size: 30px;
+        }
+    }
+    .sale__form
+    {
+        width: 50%;
+    }
+    .sale__img
+    {
+        width: 90px;
+    }
+    .form__input
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .name__label, .phone__label
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 660px) {
+    .container
+    {
+        width: 576px;
+    }
+    .feedback__title
+    {
+        margin-bottom: 0;
+    }
+    .slider
+    {
+        margin-top: 10px;
+    }
+    .slide__body
+    {
+        text-align: center;
+        flex-direction: column;
+        img
+        {
+            margin: 0 auto;
+        }
+    }
+    .slide__text
+    {
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .promo__list
+    {
+        justify-content: space-around;
+    }
+    .promo__list-item
+    {
+        font-size: 25px;
+    }
+    .sale__img
+    {
+        display: none;
+    }
+    .slick-list
+    {
+        width: 70%;
+    }
+    .feedback
+    {
+        height: 700px;
+    }
+    .name__label, .phone__label
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container
+	{
+		width: 350px;
+	}
+    .header
+    {
+        height: 150px;
+    }
+    .header__content
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__logo
+    {
+        margin-bottom: 20px;
+    }
+    .main
+    {
+        background: url(../video/video.jpg) center no-repeat;
+        background-size: cover;
+        height: 750px;
+    }
+    .main__img
+    {
+        img
+        {
+            width: 160px;
+        }
+    }
+    .main__content
+    {
+        flex-direction: column;
+    }
+    .structure
+    {
+        height: 700px;
+    }
+    .structure__content
+    {
+        flex-direction: column;
+    }
+    .structure__items
+    {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .structure__item
+    {
+        height: 60%;
+        width: 30%;
+        justify-content: flex-start;
+        img
+        {
+            width: 60px;
+        }
+    }
+    .promo
+    {
+        height: 850px;
+    }
+    .promo__top
+    {
+        flex-direction: column;
+        &-info
+        {
+            align-items: center;
+            width: 100%;
+        }
+    }
+    .promo__text
+    {
+        text-align: center;
+        width: 100%;
+    }
+    .promo__list
+    {
+        text-align: center;
+    }
+    .sale
+    {
+        height: 950px;
+        &__info
+        {
+            text-align: center;
+            width: 100%;
+        }
+        &__form
+        {
+            justify-content: flex-start;
+            width: 100%;
+        }
+        &__timer
+        {
+            margin-bottom: 10px;
+        }
+    }
+    .sale__content
+    {
+        align-items: center;
+        flex-direction: column;
+    }
+    .form__fields
+    {
+        width: 100%;
+    }
+    .form__field
+    {
+        width: 100%;
+        input
+        {
+            width: 100%;
+        }
+    }
+    .form__btn
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .name__label, .phone__label
+    {
+        font-size: 16px;
+        right: 10px;
+    }
+    .feedback
+    {
+        height: 620px;
+    }
+    .slick-list
+    {
+        width: 100%;
+    }
+    .slick-arrow
+    {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .feedback
+    {
+        height: 650px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container
+	{
+		width: 315px;
+	}
+    .header
+    {
+        height: 200px;
+        &__info
+        {
+            text-align: center;
+            justify-content: space-around;
+            height: 50%;
+            flex-direction: column;
+        }
+        &__phoneNumber
+        {
+            margin-right: 15px;
+        }
+    }
+    .feedback
+    {
+        height: 660px;
+    }
+    .promo
+    {
+        height: 900px;
+    }
+}
+
+@media (max-width: 300px) {
+    .feedback
+    {
+        height: 710px;
+    }
+}
+
+/////////////////////////// MEDIA QUERIES ////////////////////
